@@ -3,6 +3,10 @@ openblotter
 
 Scrapes, stores and and displays Pittsburgh Bureau of Police incident data.
 
+### Disclaimer
+----
+Scraping Pittsburgh Bureau of Police logs every morning and display criminal incidents. Striving to provide the best analysis of the city's data, but limited to the accuracy of the contents and the number of incidents provided by the police. It is important that any decisions based on this data be confirmed using additional resources. As the city says, "The City of Pittsburgh has provided this information as a service. The City assumes no responsibility for the use of information posted on this site." Blame Tim Condello, Mark Howe, Andrew McGill, Andy Somerville and Open Pittsburgh for creating this application. 
+
 Background
 ----
 Every morning (usually), the Pittsburgh police department publishes a PDF of the previous day's incidents and arrests here: [http://communitysafety.pittsburghpa.gov/Blotter.aspx](http://communitysafety.pittsburghpa.gov/Blotter.aspx). Trouble is, they're posted in tough-to-read PDFs.
