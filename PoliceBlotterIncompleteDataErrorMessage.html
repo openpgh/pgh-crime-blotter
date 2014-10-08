@@ -1,0 +1,118 @@
+<!DOCTYPE html >
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Police Blotter Incomplete Error Message</title>
+    <style>
+        html, body, #map {
+            height: 80%;
+            margin: 0px;
+            padding: 0px
+        }
+        h1{
+            color: white;
+        }
+
+        #info-box {
+            background-color: white;
+            border: 1px solid black;
+            bottom: 125px;
+            height: 20px;
+            padding: 10px;
+            position: absolute;
+            left: 30px;
+        }
+        #header {
+            background-color:black;
+            color:white;
+            text-align:center;
+            padding:5px;
+            height: 15%;
+        }
+        #nav {
+            line-height:30px;
+            background-color:#eeeeee;
+            height:100%;
+            width:175px;
+            float:left;
+            padding:5px; 
+        }
+        #section {
+            width:100%;
+            height:100%;
+            float:left;
+            padding:10px;
+            text-align: center;
+        }
+        #footer {
+            background-color:black;
+            color:white;
+            clear:both;
+            text-align:center;
+            padding:5px; 
+            height:35%;
+        }
+        #panel {
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            margin-left: -180px;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+        }
+        h1.section{
+            color: blue;
+        }
+    </style>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCb3EA0lfao273s6Jkp8tfTzJfUSkswpOw"></script>
+    <script type="text/javascript">
+
+
+        function initialize() {
+            //alert("Running load " + ShapeNameDescription[ShapeNameLocation]);
+            processmap(ShapeNameLocation);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>City of Pittsburgh Police Blotter</h1>
+    </div>
+
+
+
+
+
+    <div id="section">
+        <h1 style="color:red">Sorry, but an error has occurred.</h1>
+        <p>
+            The OpenPGH Police Blotter Team has been notified of the error. <br>
+            The error appears to be the result of incomplete data processed <br>
+            from the daily Police Blotter PDF.<br>
+            Please check back later.
+            <br><br>
+            Thank-you:  OpenPGH Police Blotter Team.
+        </p>
+    </div>
+
+    <div id="footer">
+        <h1>Disclaimer</h1>
+        <p>
+            I scrape Pittsburgh Bureau of Police logs every morning and display criminal incidents.
+
+            I strive to provide the best analysis of the city's data, but I'm limited to the accuracy of the contents and the number of incidents provided by the police. It is important that any decisions based on this data be confirmed using additional resources.
+
+            As the city says, "The City of Pittsburgh has provided this information as a service. The City assumes no responsibility for the use of information posted on this site."
+
+            Blame Tim Condello, Mark Howe, Andrew McGill, Andy Somerville and Open Pittsburgh for creating me.
+        </p>
+        Copyright © OpenPGH
+    </div>
+</body>
+
+</html>
